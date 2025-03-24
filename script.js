@@ -43,6 +43,7 @@ async function getLocation(ip = "") {
       city = location.city;
     }
     const updateData = [timezone, query, isp, city];
+    if (!timezone && !isp) throw new Error("Private IPs"); //check for private IPs
     updateCard(updateData);
 
     if (!map) {
@@ -56,8 +57,8 @@ async function getLocation(ip = "") {
     }
     const marker = L.marker([lat, lon]).addTo(map);
     marker.bindPopup();
-  } catch (error) {
-    console.error("Error:", error.message);
+  } catch (Error) {
+    alert(`Error: ${Error.message}`);
   }
 }
 
