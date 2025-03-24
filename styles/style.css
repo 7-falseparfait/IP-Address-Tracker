@@ -1336,7 +1336,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/ip-address-tracker-master/images/pattern-bg-mobile.png");
+  background-image: url("../images/pattern-bg-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1357,6 +1357,7 @@ button:hover {
   .hero .form {
     margin-top: 4rem;
     width: 50%;
+    background-image: url("../images/pattern-bg-desktop.png");
   }
 }
 

@@ -8,19 +8,20 @@ async function getIPAPI(ip = "") {
         ? `https://geo.ipify.org/api/v2/country,city?apiKey=${APIKEY}&ipAddress=${ip}`
         : `http://ip-api.com/json/`
     );
+
     if (!response.ok)
       throw new Error(`${response.status} ${response.statusText}`);
     const data = await response.json();
     console.log(data);
     return data;
   } catch (Error) {
-    console.error("Error:", Error.message);
+    console.log(Error);
+    alert(`Error: ${Error.message}`);
   }
 }
 async function getLocation(ip = "") {
   try {
     const locationData = await getIPAPI(ip);
-    console.log(locationData);
 
     if (!locationData) throw new Error("Failed to Load Location Data");
 
