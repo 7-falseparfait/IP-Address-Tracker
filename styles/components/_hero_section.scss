@@ -1,0 +1,52 @@
+.hero {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("/ip-address-tracker-master/images/pattern-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: 1px solid transparent;
+  position: relative;
+  @media (min-width: 600px) {
+    min-height: 40vh;
+  }
+}
+.hero .form {
+  width: 100%;
+  margin-top: 2rem;
+  @media (min-width: 600px) {
+    margin-top: 4rem;
+    width: 50%;
+  }
+}
+.hero h1 {
+  color: white;
+}
+input {
+  background-color: white;
+  height: 5rem;
+  width: 100%;
+  border-radius: 10px 0px 0px 10px;
+  padding: 0 2rem;
+  line-height: 5rem;
+  font-size: 18px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input::placeholder {
+  font-size: 18px;
+  color: $Very-Dark-Gray;
+  line-height: 5rem;
+  vertical-align: middle;
+}
+
+button {
+  height: 5rem;
+  padding: 0 1.5rem;
+  background-color: $Very-Dark-Gray;
+  border-radius: 0 10px 10px 0;
+}

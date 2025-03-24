@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    /> -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <section class="hero px-3">
+      <h1 class="font-weight-700 font-28 centered flex mt-2">
+        IP Address Tracker
+      </h1>
+      <div class="flex centered form">
+        <input type="text" placeholder="" id="ip-input" />
+        <button id="btn"><img src="./images/icon-arrow.svg" alt="" /></button>
+      </div>
+      <div class="details-card">
+        <div>
+          <p>IP ADDRESS</p>
+          <p id="ip">192.212.174.101</p>
+        </div>
+        <div>
+          <p>LOCATION</p>
+          <p id="location">Brooklyn, NY 10001</p>
+        </div>
+        <div>
+          <p>TIMEZONE</p>
+          <p id="timezone">UTC-05:00</p>
+        </div>
+        <div class="bit">
+          <p>ISP</p>
+          <p id="isp">SpaceX Starlink</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="map"></section>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

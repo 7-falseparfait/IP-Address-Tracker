@@ -1,0 +1,11 @@
+.map {
+  height: 70vh;
+  min-width: 0;
+  // max-width: 100%;
+  // width: 100%;
+}
+.leaflet-container {
+  position: relative !important;
+  z-index: -1 !important;
+  width: 100%;
+}
