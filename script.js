@@ -6,7 +6,7 @@ async function getIPAPI(ip = "") {
     const response = await fetch(
       ip
         ? `https://geo.ipify.org/api/v2/country,city?apiKey=${APIKEY}&ipAddress=${ip}`
-        : `http://ip-api.com/json/`
+        : `https://ip-api.com/json/`
     );
 
     if (!response.ok)
